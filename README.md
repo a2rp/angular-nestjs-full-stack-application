@@ -23,6 +23,9 @@ libraries used
 - in command prompt type "npm run start" and press enter
 - "client" will start running on the specified port
 
+# libraries used
+- scss => SASS: ‘Syntactically awesome style sheets’. It is an extension of CSS, that makes it easy to use variables of CSS, nested rules, inline import, and many other important features
+
 <img width="677" alt="Screenshot 2023-09-29 041525" src="https://github.com/a2rp/angular-nestjs-full-stack-application/assets/5670738/56405f10-4c3e-4751-ac89-e031427e2b96">
 
 
