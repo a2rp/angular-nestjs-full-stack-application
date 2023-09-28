@@ -1,0 +1,26 @@
+<div class="container">
+  <h3>Add User</h3>
+
+  <form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+    <input type="text" name="name" placeholder="Name" ngModel />
+    <b style="color: orangered">{{ nameError }}</b>
+
+    <input type="email" name="email" placeholder="EMail" ngModel />
+    <b style="color: orangered">{{ emailError }}</b>
+
+    <input type="text" name="phone" placeholder="Phone Number" ngModel />
+    <b style="color: orangered">{{ phoneError }}</b>
+
+    <textarea
+      name="address"
+      id="address"
+      cols="30"
+      rows="10"
+      placeholder="Address"
+      ngModel
+    ></textarea>
+    <b style="color: orangered">{{ addressError }}</b>
+
+    <button class="addUserButton" *ngIf="!disableButton">Add New User</button>
+  </form>
+</div>

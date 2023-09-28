@@ -1,0 +1,117 @@
+.container {
+  //   border: 1px solid #f00;
+  padding: 15px;
+
+  h1 {
+    text-decoration: underline;
+    margin-top: 15px;
+  }
+
+  .pdfControllers {
+    margin-top: 15px;
+
+    button {
+      width: 100%;
+      padding: 5px;
+      display: block;
+      margin: 5px;
+    }
+  }
+
+  .table-edit-container {
+    display: flex;
+    gap: 30px;
+
+    .tableContainer {
+      width: 100%;
+
+      table {
+        margin-top: 15px;
+        table-layout: fixed;
+        width: 100%;
+
+        thead {
+          th {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 5px;
+              text-align: center;
+              overflow: auto;
+
+              .editButton,
+              .deleteButton {
+                color: #fff;
+                margin-top: 1px;
+                margin-bottom: 1px;
+                padding: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 3px;
+                border: none;
+                width: 100%;
+              }
+
+              .editButton {
+                background-color: blueviolet;
+
+                &:hover {
+                  background-color: violet;
+                }
+              }
+              .deleteButton {
+                background-color: orange;
+
+                &:hover {
+                  background-color: red;
+                }
+              }
+            }
+          }
+
+          tr:nth-child(even) {
+            background-color: aliceblue;
+          }
+        }
+      }
+    }
+
+    .update-user {
+      width: 100%;
+      //   border: 1px solid #f00;
+      padding: 15px;
+      margin-top: 15px;
+      background-color: lightblue;
+
+      form {
+        input {
+          display: block;
+          height: 30px;
+          width: 95%;
+          margin-top: 15px;
+          padding-left: 15px;
+        }
+
+        textarea {
+          width: 95%;
+          margin-top: 15px;
+          padding-left: 15px;
+          resize: none;
+        }
+
+        button {
+          padding: 5px;
+          padding-left: 15px;
+          padding-right: 15px;
+          margin: 15px;
+        }
+      }
+    }
+  }
+}

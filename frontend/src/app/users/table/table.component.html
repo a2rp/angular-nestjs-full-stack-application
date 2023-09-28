@@ -1,0 +1,79 @@
+<h1 class="container">
+  <div class="pdfControllers">
+    <button (click)="generatePDF()">Generate PDF</button>
+    <button (click)="downloadPDF()" *ngIf="download">Download PDF</button>
+    <button (click)="viewPDF()" *ngIf="view">View PDF</button>
+  </div>
+
+  <div class="table-edit-container">
+    <div class="tableContainer">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <th scope="row">{{ user.name }}</th>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone }}</td>
+            <td>{{ user.address }}</td>
+            <td>
+              <button class="editButton" (click)="editButtonClick(user)">
+                EDIT
+              </button>
+              <button class="deleteButton" (click)="delete(user.id, user.name)">
+                DELETE
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="editFlag">
+      <div class="update-user">
+        <h3>Update User</h3>
+        <form #usersForm="ngForm" (ngSubmit)="updateUserFormData()">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            [(ngModel)]="updateUser.name"
+          />
+          {{ nameError }}
+          <input
+            type="email"
+            name="email"
+            placeholder="EMail"
+            [(ngModel)]="updateUser.email"
+            disabled
+          />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone Number"
+            [(ngModel)]="updateUser.phone"
+          />
+          {{ phoneError }}
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="10"
+            placeholder="Address"
+            [(ngModel)]="updateUser.address"
+          ></textarea>
+          {{ addressError }}
+
+          <button>Update User</button>
+          <button (click)="hideEditForm()">cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</h1>
