@@ -13,6 +13,8 @@ libraries used
 - pdf-creator-node => to generate pdf file from html
 - uuid => to create unique id of the user
 
+<img width="744" alt="Screenshot 2023-09-29 041321" src="https://github.com/a2rp/angular-nestjs-full-stack-application/assets/5670738/3d53543a-2668-47f6-81f7-adb8c7b8854a">
+
 # run frontend
 - download the "frontend" folder
 - in root of the folder open an integrated terminal
@@ -20,6 +22,9 @@ libraries used
 - wait for node packages to install
 - in command prompt type "npm run start" and press enter
 - "client" will start running on the specified port
+
+<img width="677" alt="Screenshot 2023-09-29 041525" src="https://github.com/a2rp/angular-nestjs-full-stack-application/assets/5670738/56405f10-4c3e-4751-ac89-e031427e2b96">
+
 
 # screenshots of the application while running
 
