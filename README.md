@@ -60,10 +60,10 @@ SCSS extends CSS with useful features such as variables, nesting, reusable styli
 
 ```text
 angular-nestjs-full-stack-application/
-├── backend/
-├── frontend/
-├── .gitignore
-└── README.md
+â”œâ”€â”€ backend/
+â”œâ”€â”€ frontend/
+â”œâ”€â”€ .gitignore
+â””â”€â”€ README.md
 ```
 
 The repository contains two independent applications:
@@ -119,13 +119,13 @@ The frontend application will start on the port configured by the project.
 
 ```text
 Angular Frontend
-      ↓
+      â†“
 NestJS Backend
-      ↓
+      â†“
 User Management
-      ↓
+      â†“
 PDF Generation
-      ↓
+      â†“
 View / Download PDF
 ```
 
@@ -218,7 +218,6 @@ When running the project locally:
 Additional architecture, workflow, implementation, and project notes are available in:
 
 ```text
-DOCUMENTATION.md
 ```
 
 ## Author
